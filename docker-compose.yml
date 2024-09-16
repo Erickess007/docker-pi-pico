@@ -1,0 +1,7 @@
+services:
+  raspberry-pi-pico-dev:
+    build: .
+    volumes:
+      - ./workspace:/workspace
+    command: /bin/bash
+    working_dir: /workspace
